@@ -8,6 +8,7 @@ import {
   CSidebarFooter,
   CSidebarHeader,
   CSidebarToggler,
+  CImage
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
@@ -37,7 +38,12 @@ const AppSidebar = () => {
     >
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
-          <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} />
+          <CImage
+            className="sidebar-brand-full"
+            src="src/assets/brand/logo_mogai.png" // Replace with actual image path
+            height={32}
+          />
+          {/* <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} /> */}
           <CIcon customClassName="sidebar-brand-narrow" icon={sygnet} height={32} />
         </CSidebarBrand>
         <CCloseButton

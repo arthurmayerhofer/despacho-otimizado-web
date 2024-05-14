@@ -18,6 +18,7 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
+  CImage
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import {
@@ -178,7 +179,12 @@ const Dashboard = () => {
 
   return (
     <>
-      <WidgetsDropdown className="mb-4" />
+    <CImage
+            className="sidebar-brand-full"
+            src="src/assets/images/banner-dashboard.png" // Replace with actual image path
+            height={450}
+          />
+      {/* <WidgetsDropdown className="mb-4" />
       <CCard className="mb-4">
         <CCardBody>
           <CRow>
@@ -379,7 +385,7 @@ const Dashboard = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
     </>
   )
 }

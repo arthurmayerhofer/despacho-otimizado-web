@@ -16,7 +16,7 @@ body {
 }
 
 .sidebar-brand-full {
-  margin-left: 3px;
+  margin-left: 10px;
 }
 
 .sidebar-header {
@@ -50,6 +50,21 @@ body {
 .footer {
   min-height: calc(3rem + 1px); // stylelint-disable-line function-disallowed-list
 }
+
+.styled-nav-link {
+  /* Add your desired styles here */
+  font-weight: bold; /* Example: Make text bold */
+  text-decoration: none; /* Remove default underline */
+  padding: 10px 20px; /* Example: Add padding */
+  border-radius: 5px; /* Example: Add rounded corners */
+  transition: background-color 0.3s ease; /* Example: Add hover effect */
+  opacity: 0.7;
+}
+
+.styled-nav-link:hover { /* Hover state */
+  opacity: 0.95; /* Reduce opacity to 70% on hover */
+}
+
 
 @if $enable-dark-mode {
   @include color-mode(dark) {
