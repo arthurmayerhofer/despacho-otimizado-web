@@ -9,13 +9,9 @@ const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIc
 const Flags = React.lazy(() => import('./views/icons/flags/Flags'))
 const Brands = React.lazy(() => import('./views/icons/brands/Brands'))
 
-const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
-
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
-  { path: '/theme', name: 'Theme', element: Colors, exact: true },
-  { path: '/cadastro', name: 'Cadastro', element: Colors, exact: true },
 
   { path: '/cadastro/veiculos', name: 'Veiculos', element: Veiculos },
   { path: '/cadastro/maquinas', name: 'Maquinas', element: Maquinas },
