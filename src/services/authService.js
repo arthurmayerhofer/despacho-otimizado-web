@@ -30,38 +30,3 @@ export const fetchToken = async (email, password) => {
 
 
 
-// import axios from 'axios';
-
-// const login = async (email, password) => {
-//   try {
-//     const response = await axios.post(
-//       'https://despacho-otimizado-dev.azurewebsites.net/api/v1/auth/login',
-//       {
-//         email,
-//         password,
-//       },
-//       {
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//       }
-//     );
-
-//     if (response.data.succeed) {
-//       const token = response.data.data.token;
-//       const expiration = response.data.data.expiration;
-//       return { token, expiration };
-//     } else {
-//       throw new Error('Login failed. Please check your credentials.');
-//     }
-//   } catch (error) {
-//     throw error;
-//   }
-// };
-
-// export default login;
-
-
-
-
-

@@ -40,7 +40,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Máquinas',
-    to: '/theme/typography',
+    to: '/cadastro/maquinas',
     icon: <CIcon icon={cilCarAlt} customClassName="nav-icon" />,
   },
   {

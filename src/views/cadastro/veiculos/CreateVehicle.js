@@ -10,10 +10,8 @@ const NewVehicleButton = () => {
   });
 
   const handleAdd = async (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
 
-    // Implement your logic to create a new vehicle on the server
-    // Replace with your actual API call and data handling
     const response = await fetch(/* Your API endpoint */ + '/vehicles', {
       method: 'POST',
       body: JSON.stringify(newVehicleData),
